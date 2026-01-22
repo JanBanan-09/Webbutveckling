@@ -1,0 +1,82 @@
+@charset "UTF-8";
+section{
+    /* background: darkred; */
+     color: black;
+}
+
+body{
+    display: grid;
+    padding: 0 20%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+         "a     b      c"
+         "d     .      e"
+         "f     g      h"
+         "i     t      t"
+         "j     t      t"
+}
+
+#a{
+    grid-area: a;
+    background:url(Images/a.jpg);
+    background-size: cover;
+}
+    
+#b{
+    grid-area: b;
+    background: url(Images/b.webp);
+    background-size: cover;
+}
+
+#c{
+    grid-area: c;
+    background:url(Images/c.jpg);
+    background-size: cover;
+    border-radius: 0px 40px 0px 0px;
+}
+
+#d{
+    grid-area: d;
+    background:url(Images/d.jpg);
+    background-size: cover;
+}
+
+#e{
+    grid-area: e;
+    background:url(Images/e.jpg);
+    background-size: cover;
+}
+
+#f{
+    grid-area: f;
+    background:url(Images/f.jpg);
+    background-size: cover;
+}
+#g{
+    grid-area: g;
+    background:url(Images/g.webp);
+    background-size: cover;
+}
+#h{
+    grid-area: h;
+    background:url(Images/h.jpg);
+    background-size: cover;
+    border-radius: 0px 0px 40px 0px;
+}
+#i{
+    grid-area: i;
+    background:url(Images/i.jpg);
+    background-size: cover;
+}
+#j{
+    grid-area: j;
+    background:url(Images/j.jpg);
+    background-size: cover;
+}
+#t{
+    grid-area: t;
+    background-size: cover; 
+    font-size: 20px;
+    font-style: italic;
+}

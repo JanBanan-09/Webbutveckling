@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+
+
+body {
+    margin: 0;
+    font-family: verdana;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+main, aside {
+    border: 1px solid #DDD;
+    padding: 14px;
+    margin: 14px;
+}
+
+
+#podcasts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "banner"
+        "latest"
+        "img1"
+        "txt1"
+        "img2"
+        "txt2"
+        "img3"
+        "txt3"
+        "img4"
+        "txt4";
+    gap: 10px;
+}
+
+#banner {
+    grid-area: banner;
+    background: url(images/moonlanding.webp) center / cover;
+    min-height: 220px;
+}
+
+#latest { grid-area: latest; }
+
+#castImg1 {
+    grid-area: img1;
+    background: url(images/vitruvian_man_da_vinci.webp) center / cover;
+    min-height: 160px;
+}
+
+#castInfo1 { grid-area: txt1; }
+
+#castImg2 {
+    grid-area: img2;
+    background: url(images/napoleon.webp) center / cover;
+    min-height: 160px;
+}
+
+#castInfo2 { grid-area: txt2; }
+
+#castImg3 {
+    grid-area: img3;
+    background: url(images/pyramids.webp) center / cover;
+    min-height: 160px;
+}
+
+#castInfo3 { grid-area: txt3; }
+
+#castImg4 {
+    grid-area: img4;
+    background: url(images/ali.webp) center / cover;
+    min-height: 160px;
+}
+
+#castInfo4 { grid-area: txt4; }
+
+
+h2 {
+    font: 40px "Bebas Neue", sans-serif;
+    color: darkred;
+    text-transform: uppercase;
+    border-bottom: 1px solid #CCC;
+}
+
+h3 {
+    font: 36px "Bebas Neue", sans-serif;
+    margin: 0;
+}
+
+h4 {
+    font: 17px arial;
+    font-weight: bold;
+    margin: 0;
+}
+
+ul {
+    list-style: square;
+    padding-left: 1em;
+}
+
+span {
+    color: darkred;
+}
+
+
+
+@media (min-width: 701px) {
+
+    #wrapper {
+        flex-direction: row;
+    }
+
+    main {
+        flex: 3;
+    }
+
+    aside {
+        flex: 1;
+    }
+
+    #podcasts {
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-areas:
+            "banner  img1 txt1"
+            "banner  img2 txt2"
+            "latest  img3 txt3"
+            "latest  img4 txt4";
+    }
+
+    #banner {
+        min-height: 100%;
+    }
+}
+
+
+
+@media (min-width: 1100px) {
+    aside {
+        align-self: flex-start;
+    }
+}

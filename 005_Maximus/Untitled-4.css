@@ -1,0 +1,14 @@
+@charset "UTF-8";
+article{
+    display: flex;
+}
+
+body{
+    flex: 1;
+    padding: 10px;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    margin: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+}

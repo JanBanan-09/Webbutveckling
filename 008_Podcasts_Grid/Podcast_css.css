@@ -1,0 +1,66 @@
+@charset "UTF-8";
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a    b   h"
+    "a    c   i"
+    "f    d   j"
+    "g    e   k"
+    ;
+}
+
+#a{
+    grid-area: a;
+    background:url(Images/moonlanding.webp);
+    background-size: cover;
+}
+#b{
+    grid-area: b;
+    background: url(Images/vitruvian_man_da_vinci.webp);
+    background-size: cover;
+    margin: 10px;
+}
+#c{
+    grid-area: c;
+    background: url(Images/napoleon.webp);
+    background-size: cover;
+    margin: 10px;
+}
+#d{
+    grid-area: d;
+    background: url(Images/pyramids.webp);
+    background-size: cover;
+    margin: 10px;
+}
+#e{
+    grid-area: e;
+    background: url(Images/ali.webp);
+    background-size: cover;
+    margin: 10px;
+}
+#f{
+    grid-area: f;
+    background-size: cover;
+}
+#g{
+    grid-area: g;
+    background-size: cover;
+}
+#h{
+    grid-area: h;
+    background-size: cover;
+}
+#i{
+    grid-area: i;
+    background-size: cover;
+}
+#j{
+    grid-area: j;
+    background-size: cover;
+}
+#k{
+    grid-area: k;
+    background-size: cover;
+}

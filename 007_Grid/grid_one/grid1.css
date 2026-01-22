@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+
+section{
+    background: darkred;
+    margin: 1px;
+     color: white;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "a  a   b   b"
+        "c  d   d   e"; 
+}
+
+#a{
+    grid-area: a;
+    background:url(Image/heat.jpg);
+    background-size: cover;
+}
+    
+#b{
+    grid-area: b;
+background: url(Image/usualsuspects.jpg);
+background-size: cover;
+}
+
+#c{
+    grid-area: c;
+    background:url(Image/insideman.jpg);
+    background-size: cover;
+}
+
+#d{
+    grid-area: d;
+    background:url(Image/rififi.jpg);
+    background-size:cover;
+}
+
+#e{
+    grid-area: e;
+    background:url(Image/bankjob.jpg);
+    background-size:cover;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Internet.css">
+<title>Internets historia i Sverige</title>
+</head>
+<body>
+
+<h1>Internets historia – med fokus på Sverige</h1>
+<p>Internet har förändrat hur vi kommunicerar, arbetar och lever. Sverige har varit
+    ett av de länder som tidigt låg i framkant när det gäller utveckling och användning
+    av internet. Här är tre delar av internets historia som är särskilt intressanta ur ett
+    svenskt perspektiv.</p>
+
+<section id="sunet">
+    <h2>1. SUNET – Sveriges första steg ut på internet</h2>
+    <p>Redan under 1980-talet började svenska universitet kopplas samman i nätverk. År 1984 startades SUNET, som gjorde det möjligt för forskare och studenter att kommunicera digitalt.</p>
+    <button onclick="startReading('sunet')">🔊</button>
+    <button onclick="pauseReading()">⏸️ </button>
+    <button onclick="stopReading()">⏹️ </button>
+</section>
+
+<section id="bredband">
+    <h2>2. Sverige som bredbandsland</h2>
+    <p>Under slutet av 1990-talet satsade Sverige stort på bredband. Detta gjorde snabbt internet tillgängligt för många hushåll.</p>
+    <button onclick="startReading('bredband')">🔊</button>
+    <button onclick="pauseReading()">⏸️ </button>
+    <button onclick="stopReading()">⏹️ </button>
+</section>
+
+<section id="kultur">
+    <h2>3. Svensk internetkultur och yttrandefrihet</h2>
+    <p>Sverige har haft stor betydelse för internetkultur och debatt kring yttrandefrihet, bland annat genom The Pirate Bay.</p>
+    <button onclick="startReading('kultur')">🔊 </button>
+    <button onclick="pauseReading()">⏸️ </button>
+    <button onclick="stopReading()">⏹️ </button>
+</section>
+
+<!-- Detta är för att rektorn vill ha text to speech. Chatgpt :) -->
+<script>
+let speech;
+
+
+function startReading(sectionId) {
+    const text = document.getElementById(sectionId).innerText;
+    if (window.speechSynthesis.speaking) {
+        window.speechSynthesis.cancel();
+    }
+    speech = new SpeechSynthesisUtterance(text);
+    speech.lang = "sv-SE";
+    speech.rate = 1;
+    window.speechSynthesis.speak(speech);
+}
+
+
+function pauseReading() {
+    if (window.speechSynthesis.speaking) {
+        window.speechSynthesis.pause();
+    }
+}
+
+
+function stopReading() {
+    window.speechSynthesis.cancel();
+}
+</script>
+
+</body>
+</html>

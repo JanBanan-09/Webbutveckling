@@ -1,0 +1,11 @@
+slector{
+ font-weight:bold;
+}  
+
+slector{
+    font-style: italic;
+}
+
+p {
+    font-family: "FirstFont", "SecondFont", sans-serif;
+}

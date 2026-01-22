@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+
+aside h3{
+    color: black;
+}
+
+header{
+    background-color: #333;
+}
+
+h1{
+ color: #fc3; 
+
+}
+
+h2{
+    margin: 0;
+}
+
+nav{
+    background: #555;
+}
+
+nav a{
+    background: #444;
+    color: #FC3;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: #555;
+}
+
+
+main{
+    display: flex;
+}
+
+article{
+    flex: 2;
+}
+
+aside{
+    flex: 1;
+}
+h2{
+    color: white;
+    background-color: #333;
+}
+
+footer{
+    display: flex;
+    background: #eee;
+    padding: 10px;
+}
+
+footer section{
+    flex: 1;
+    color: black;
+    margin: 10px;
+}
+
+h5{
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+footer section p{
+    margin: 0;
+}
+
+#venedig{
+    background: url('Images/venedig.jpg');
+    margin-bottom: 10px;
+}
+
+#sangimignao{
+    background: url('Images/sangimignano.jpg');
+    
+}
+
+aside div{
+    padding: 110px 10px 10px 10px;
+    background-size: cover;
+}
+
+aside div section{
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    
+}
+
+aside div section h6{
+    margin: 0;
+    font-size: 15px;
+    font-family: verdana;
+
+}
+
+aside div section p{
+    margin: 0;
+    font-size: 14px;
+    font-family: verdana;
+    
+}
+
+table{
+    border: 2px solid blue;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px #666;
+}
+
+td{
+    border: 2px solid blue;
+    padding: 8px;
+}
+
+td:first-child{
+    background-color: darkgray;
+    color:white
+}
+
+tr:nth-child(even){
+    background:lightgray ;
+}

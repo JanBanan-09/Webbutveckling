@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    font-family: "Biryani", sans-serif;
+    background: url("Images/pexels-kevin-ku-577585.jpg") center/cover no-repeat;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgb(55, 55, 55);
+    color: white;
+}
+
+.material-symbols-outlined{
+    color: rgb(0, 206, 209);
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+header p{
+    flex: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 0;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    font-weight: 300;
+}
+
+header nav a:hover{
+    color: rgb(0, 206, 209);
+}
+
+section#webdev{
+    /* position: relative; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.textContainer {
+    /* position: relative; */
+    z-index: 1;
+    text-align: center;
+    padding: 40px 60px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.60);
+}
+
+
+.textContainer{
+    /* position: relative; */
+    z-index: 1;
+    text-align: center;
+    padding: 40px 60px;
+    border-radius: 8px;
+}
+
+.textContainer h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.textContainer .A{
+    color: white;
+}
+.textContainer .B{
+    color: rgb(0, 206, 209);
+}
+
+.textContainer p{
+    font-size: 22px;
+    color: white;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+header{
+    position: fixed;
+    width: 97%;
+}
+
+article{
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 25%;
+    margin-top: 40%;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+.about h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+h2{
+    color: #00d2ea; 
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.C{
+    color: black
+}
+
+.about h3 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+h3{
+    color: #00d2ea;
+}
+
+.contact-section {
+    /* width: 100%; */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.contact-section h1 span {
+    color: #00d0d8; 
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 2px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.gender-group {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.gender-group label {
+    margin-right: 15px;
+}
+
+.form-table-container {
+    width: 55%;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border: 3px solid #b5b5b5;
+    border-radius: 4px;
+}
+
+.form-table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+.form-table td {
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.form-table label {
+    font-weight: 600;
+}
+
+.form-table input[type="text"],
+.form-table select,
+.form-table textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #555;
+    border-radius: 5px;
+}
+
+.radio-cell label {
+    margin-right: 15px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.send-btn {
+    padding: 12px 30px;
+    font-size: 20px;
+    background: #c4f6f6;
+    border: 2px solid #444;
+    cursor: pointer;
+}
+.footer {
+    background-color: #555;      
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.footer h5 {
+    letter-spacing: 3px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 18px;
+    margin: 8px 0;
+    font-style: italic;
+}

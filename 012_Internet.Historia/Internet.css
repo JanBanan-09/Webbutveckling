@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+    color: white;
+    background-image: url(Images/pngtree-red-christmas-snow-winter-cartoon-show-board-background-picture-image_979028.jpg);
+    background-size: cover;
+}
+h1 {
+    color: green;
+}
+h2 {
+    color: red;
+}
+section {
+    background: green;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
