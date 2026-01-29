@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lär dig CSS Animationer</title>
+    <link rel="stylesheet" href="Animation_css.css">
+</head>
+<body>
+    <header>
+        <h1>Lär dig CSS-animationer</h1>
+        <p>I den här sidan kommer vi steg för steg lära oss hur man kan animera element med CSS. Vi använder <strong>@keyframes</strong> för att skapa rörelser och färgändringar.</p>
+    </header>
+
+    <section>
+        <h2>Vad är CSS-animationer?</h2>
+        <p>
+            CSS-animationer låter oss förändra utseendet på ett element över tid. Istället för att sidan bara ser statisk ut kan element röra på sig, ändra färg, storlek eller position.  
+            Det finns två huvudmetoder: <strong>Transitions</strong> och <strong>@keyframes</strong>.  
+            Här fokuserar vi på <strong>@keyframes</strong> eftersom det ger mer kontroll.
+        </p>
+    </section>
+
+    <section>
+        <h2>Hur fungerar @keyframes?</h2>
+        <p>
+            <strong>@keyframes</strong> låter oss definiera steg för steg hur ett element ska ändras under animationen.  
+            Man skriver procenttal mellan <code>0%</code> och <code>100%</code> där varje steg beskriver hur elementet ska se ut just där i animationen.
+        </p>
+
+        <p>Exempel på en enkel animation:</p>
+        <pre>
+@keyframes myAnimation {
+  0%   { background-color:red; left:0px; top:0px; }
+  25%  { background-color:yellow; left:200px; top:0px; }
+  50%  { background-color:blue; left:200px; top:200px; }
+  75%  { background-color:green; left:0px; top:200px; }
+  100% { background-color:red; left:0px; top:0px; }
+}
+        </pre>
+
+        <p>
+            Här händer följande:  
+            <ul>
+                <li><strong>0%</strong> – Animationen börjar, boxen är röd uppe till vänster.</li>
+                <li><strong>25%</strong> – Boxen blir gul och flyttar sig till höger.</li>
+                <li><strong>50%</strong> – Boxen blir blå och flyttar neråt.</li>
+                <li><strong>75%</strong> – Boxen blir grön och flyttar till vänster.</li>
+                <li><strong>100%</strong> – Boxen är tillbaka till startläge och röd igen.</li>
+            </ul>
+        </p>
+
+        <p>För att animationen ska synas måste vi koppla den till ett element:</p>
+        <pre>
+div {
+  width: 100px;           /* boxens bredd */
+  height: 100px;          /* boxens höjd */
+  position: relative;      /* viktigt för left/top */
+  background-color: red;  /* startfärg */
+  animation-name: myAnimation;  /* vilken animation som används */
+  animation-duration: 4s;       /* hur lång tid ett varv tar */
+  animation-iteration-count: infinite; /* loopar oändligt */
+}
+        </pre>
+    </section>
+
+    <section>
+        <h2>Se det live</h2>
+        <p>Här är en ruta som använder animationen ovan. Den flyttar sig i en fyrkant och byter färg:</p>
+        <div class="animated-box"></div>
+
+        <p>
+            Förklaring steg för steg:  
+            <ul>
+                <li><strong>width & height</strong> – Hur stor boxen är.</li>
+                <li><strong>position: relative</strong> – Gör det möjligt att flytta boxen med <code>left</code> och <code>top</code>.</li>
+                <li><strong>background-color</strong> – Startfärg på boxen.</li>
+                <li><strong>animation-name</strong> – Kopplar boxen till @keyframes.</li>
+                <li><strong>animation-duration</strong> – Bestämmer hur lång tid ett varv tar.</li>
+                <li><strong>animation-iteration-count</strong> – Loopar animationen oändligt.</li>
+            </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Flera boxar med olika animationer</h2>
+        <p>Vi kan skapa flera boxar som rör sig olika. Här är fyra boxar med olika animationer, färger och rörelser:</p>
+
+        <div class="animation-container">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+        </div>
+
+        <p>
+            Varje box använder sin egen <strong>@keyframes</strong>-animation:
+            <ul>
+                <li><strong>Box 1</strong> – Fyrkantsrörelse och färgändring.</li>
+                <li><strong>Box 2</strong> – Diagonal rörelse och färgändring.</li>
+                <li><strong>Box 3</strong> – Rotation och färgcykling.</li>
+                <li><strong>Box 4</strong> – Zoom in och ut samtidigt som den rör sig.</li>
+            </ul>
+        </p>
+        <p>Detta visar hur flexibel @keyframes är – du kan animera nästan vad som helst: position, färg, storlek, rotation och mer.</p>
+    </section>
+
+    <footer>
+        <p>Nu har du sett grunderna i CSS-animationer och exempel på olika typer av rörelser. Experimentera gärna själv med olika färger, tider och rörelser!</p>
+    </footer>
+</body>
+</html>

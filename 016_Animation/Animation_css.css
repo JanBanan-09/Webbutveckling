@@ -1,0 +1,131 @@
+@charset "UFT-8";
+
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center; 
+}
+
+header, footer {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+
+.animation-container {
+    position: relative; 
+    height: 250px; 
+    margin: 20px auto;
+}
+
+
+.box {
+    width: 60px;          
+    height: 60px;         
+    position: absolute;   
+    border-radius: 10px;  
+}
+
+
+.box1 {
+    background-color: red;  
+    animation-name: squareMove; 
+    animation-duration: 4s;    
+    animation-iteration-count: infinite; 
+    animation-timing-function: linear;   
+}
+
+
+@keyframes squareMove {
+    0%   { background-color: red;   left:0;   top:0; }
+    25%  { background-color: yellow; left:200px; top:0; }
+    50%  { background-color: blue;  left:200px; top:200px; }
+    75%  { background-color: green; left:0;   top:200px; }
+    100% { background-color: red;   left:0;   top:0; }
+}
+
+
+.box2 {
+    background-color: blue;
+    animation-name: diagonalMove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes diagonalMove {
+    0%   { left:0; top:0; background-color: blue; }
+    50%  { left:150px; top:150px; background-color: cyan; }
+    100% { left:0; top:0; background-color: blue; }
+}
+
+
+.box3 {
+    background-color: green;
+    top: 100px;  
+    left: 50px;  
+    animation-name: rotateMove;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes rotateMove {
+    0%   { transform: rotate(0deg); background-color: green; }
+    50%  { transform: rotate(180deg); background-color: lime; }
+    100% { transform: rotate(360deg); background-color: green; }
+}
+
+
+.box4 {
+    background-color: purple;
+    animation-name: scaleMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes scaleMove {
+    0%   { transform: scale(1) translateX(0); background-color: purple; }
+    50%  { transform: scale(1.5) translateX(100px); background-color: pink; }
+    100% { transform: scale(1) translateX(0); background-color: purple; }
+}
+
+
+@media (min-width: 768px) {
+    .box {
+        width: 80px;   
+        height: 80px;
+    }
+
+    .animation-container {
+        height: 350px; 
+    }
+}
+
+
+.animated-box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes myAnimation {
+    0%   { background-color: red;   left:0px;   top:0px; }
+    25%  { background-color: yellow; left:200px; top:0px; }
+    50%  { background-color: blue;  left:200px; top:200px; }
+    75%  { background-color: green; left:0px;   top:200px; }
+    100% { background-color: red;   left:0px;   top:0px; }
+}
